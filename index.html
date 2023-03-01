@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="rate-support-container">
+      <div class="container-star">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <form action="">
+          <ol class="rating">
+            <li>
+              <input class="points" type="radio" id="1" name="rating" value="1">
+              <label for="1">1</label>
+            </li>
+            <li>
+              <input class="points" type="radio" id="2" name="rating" value="2">
+              <label for="2">2</label>
+            </li>
+            <li>
+              <input class="points" type="radio" id="3" name="rating" value="3">
+              <label for="3">3</label>
+            </li>
+            <li>
+              <input class="points" type="radio" id="4" name="rating" value="4">
+              <label for="4">4</label>
+            </li>
+            <li>
+              <input class="points" type="radio" id="5" name="rating" value="5">
+              <label for="5">5</label>
+            </li>
+          </ol>
+        <button type="button" id="submit-rating">SUBMIT</button>
+      </form>
+    </section>
+
+    <section class="thank-you-container">
+      <img src="./images/illustration-thank-you.svg" alt="">
+      <div>
+        <p class="message-rating">You selected&nbsp<span id="number">0</span>&nbspout of 5</p>
+      </div>
+      <div class="description">
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/ramroman163">Roman Martinez</a>.
+    </div>
+ </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
